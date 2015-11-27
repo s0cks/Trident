@@ -5,15 +5,6 @@
 extern "C"{
 #endif
 
-typedef struct gc_obj{
-    unsigned char vtype;
-    void* value;
-} gc_obj;
-
-#define TNULL 0
-#define TINT 1
-#define TSTR 2
-
 #define GC_MAX_REFS 65536
 
 #define GC_MINCHUNK_SIZE 256
